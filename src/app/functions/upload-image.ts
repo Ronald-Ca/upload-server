@@ -26,8 +26,6 @@ export async function uploadImage(
     return makeLeft(new InvalidFileFormat())
   }
 
-  console.log('1')
-
   const { key, url } = await uploadFileToStorage({
     folder: 'images',
     fileName,
